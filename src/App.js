@@ -7,13 +7,12 @@ import { Container, Typography } from "@material-ui/core";
 import Form from "./components/Form/Form";
 import Video from "./components/Video";
 import SearchBar from "./components/SearchBar/SearchBar";
-//import Player from 'video-react/lib/components/Player';
 import youtube from '../src/apis/youtube';
 
 
 class App extends React.Component {
-  onTermSubmit = term => {
-    console.log(term);    
+  onTermSubmit = (term) => {
+    console.log(term);      
     youtube.get("/search", {
       params: {
         q: term 
@@ -46,20 +45,16 @@ class App extends React.Component {
           return <Carousel key={categoria.id} category={categoria} />;
         })}
 
-        <Container 
-          component="article" 
-          maxWidth="xs"         
-        >
-        <Typography
-          variant="h4"
-          component="h1"
-          align="left"
-          color="textPrimary"
-        >Video Search
-        </Typography>
-          <SearchBar onFormSubmit={this.onTermSubmit}/>
+        <Container component="article" maxWidth="sm">
+          <Typography
+            variant="h4"
+            component="h1"
+            align="left"
+            color="textPrimary"
+          > Video Search
+          </Typography>
+          <SearchBar onSubmit={this.onTermSubmit}/>
         </Container>
-
         <Video />
 
         <Container component="article" maxWidth="sm">
