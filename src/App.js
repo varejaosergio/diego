@@ -48,8 +48,7 @@ class App extends React.Component {
 
         <Container 
           component="article" 
-          maxWidth="xs" 
-          alignContent="flex-start"
+          maxWidth="xs"         
         >
         <Typography
           variant="h4"
