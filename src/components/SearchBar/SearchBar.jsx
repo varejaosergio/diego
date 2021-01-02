@@ -5,25 +5,25 @@ function SearchBar ({onSubmit}){
     const [term, setTerm] = useState("");
 
     return (
-        <form 
-            className='SearchBar'
-            onSubmit = {(event) => {
-                event.preventDefault();
-                onSubmit({term});
+      <form 
+        className='SearchBar'
+        onSubmit = {(event) => {
+            event.preventDefault();
+            onSubmit({term});
+        }}
+      >     
+          <TextField
+            value={term}
+            onChange={(event) => {
+                setTerm(event.target.value);
             }}
-        >     
-            <TextField
-                value={term}
-                onChange={(event) => {
-                    setTerm(event.target.value);
-                }}
-                id="searchBar"
-                label="Vídeo Search"
-                variant="outlined"
-                margin="normal"
-                fullWidth
-            />
-        </form>
+            id="searchBar"
+            label="Video Search"
+            variant="outlined"
+            margin="normal"
+            fullWidth
+          />
+      </form>
     );
 }
 

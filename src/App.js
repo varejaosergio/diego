@@ -8,16 +8,20 @@ import Form from "./components/Form/Form";
 import Video from "./components/Video";
 import SearchBar from "./components/SearchBar/SearchBar";
 import youtube from '../src/apis/youtube';
+import VideoList from "./components/VideoList";
 
 
 class App extends React.Component {
-  onTermSubmit = (term) => {
-    console.log(term);      
-    youtube.get("/search", {
+  state = { videos: [] };
+
+  onTermSubmit = async (term) => {
+    const response = await youtube.get("/search", {
       params: {
         q: term 
       }
     });
+
+    this.setState({ videos: response.data.items });
   };
 
   render() {
@@ -54,6 +58,7 @@ class App extends React.Component {
           > Video Search
           </Typography>
           <SearchBar onSubmit={this.onTermSubmit}/>
+          <VideoList videos={this.state.videos} />
         </Container>
         <Video />
 
