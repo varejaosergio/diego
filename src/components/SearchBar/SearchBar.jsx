@@ -5,13 +5,14 @@ function SearchBar ({onSubmit}){
     const [term, setTerm] = useState("");
 
     return (
-      <form 
-        className='SearchBar'
-        onSubmit = {(event) => {
-            event.preventDefault();
-            onSubmit({term});
-        }}
-      >     
+      <div className="SearchBar ui segment">
+        <form 
+          className='ui form'
+          onSubmit = {(event) => {
+              event.preventDefault();
+              onSubmit({term});
+          }}
+        >     
           <TextField
             value={term}
             onChange={(event) => {
@@ -23,7 +24,8 @@ function SearchBar ({onSubmit}){
             margin="normal"
             fullWidth
           />
-      </form>
+        </form>
+      </div>
     );
 }
 
