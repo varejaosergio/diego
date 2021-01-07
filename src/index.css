@@ -4,7 +4,7 @@
 }
 
 :root { 
-  background: linear-gradient(#5f9af1, #FFFFFF);  
+  background: linear-gradient( #FFFFFF,#5f9af1);
   /* SSV-11/13/2020 --primary: #2A7AE4;*/
   /* SSV-11/13/2020 --black: #2f3031;*/
   --blackLighter: #9E9E9E;
@@ -57,18 +57,3 @@ code {
 .MuiContainer-root {   
   margin-top: 40px;   
 }
-
-
-/*body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}*/

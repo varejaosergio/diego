@@ -4,8 +4,10 @@ import styled, { css } from 'styled-components';
 import Footer from '../Footer';
 import Menu from '../Menu';
 
-
-const Main = styled.main`
+const HomeStyle = styled.div`
+    background: linear-gradient( #5f9af1, #FFFFFF);
+`;
+const Main = styled.main`    
     background-color: var(--black);
     color: var(--white);
     flex: 1;
@@ -19,13 +21,13 @@ const Main = styled.main`
 
 function PageDefault({ children, paddingAll }) {
     return (
-        <>
+        <HomeStyle>
             <Menu/>
                 <Main paddingAll= {paddingAll}>
                     {children}
                 </Main>                
             <Footer/>
-        </>
+        </HomeStyle>
     );
 }
 

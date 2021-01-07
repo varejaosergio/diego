@@ -1,3 +1,4 @@
+import './App.css'
 import React from "react";
 import PageDefault from "./components/PageDefault";
 import BannerMain from "./components/BannerMain";
@@ -5,7 +6,7 @@ import data from "./data/dados_iniciais.json";
 import Carousel from "./components/Carousel";
 import { Container, Typography } from "@material-ui/core";
 import Form from "./components/Form/Form";
-//import Video from "./components/Video";
+
 import SearchBar from "./components/SearchBar/SearchBar";
 import youtube from '../src/apis/youtube';
 import VideoList from "./components/VideoList";
@@ -16,7 +17,7 @@ class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit('Surf');
+    this.onTermSubmit('surf');
   }
 
   onTermSubmit = async (term) => {
@@ -38,7 +39,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <PageDefault paddingAll={0}>
+      <PageDefault className="pageDefault" paddingAll={0}>
         {data.categorias.map((categoria, indice) => {
           if (indice === 0) {
             return (
@@ -61,7 +62,7 @@ class App extends React.Component {
           return <Carousel key={categoria.id} category={categoria} />;
         })}
 
-        <div className="ui container">
+        <div className="searchBar ui container">
           <h3>Choose your video</h3>
           <SearchBar onSubmit={this.onTermSubmit}/>
           <div className="ui grid">
