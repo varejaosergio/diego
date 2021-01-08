@@ -11,6 +11,7 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import youtube from '../src/apis/youtube';
 import VideoList from "./components/VideoList";
 import VideoDetail from './components/VideoDetail';
+import About from './components/About';
 
 
 class App extends React.Component {
@@ -49,6 +50,7 @@ class App extends React.Component {
                   url={data.videos[0].url}
                   videoDescription="#Hawaianlife"
                 />
+                <About />
                 
                 <Carousel
                   ignoreFirstVideo
