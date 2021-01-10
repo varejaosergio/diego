@@ -4,8 +4,10 @@ import styled from 'styled-components';
 const VideoBase = styled.div`
     width: 720px;
     @media (max-width: 800px) {        
-        width: 320px;
-        margin: 0 10px 0 10px;               
+        width: 340px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;               
     }
 `;
 
