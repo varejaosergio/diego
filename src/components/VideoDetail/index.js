@@ -1,4 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const VideoBase = styled.div`
+    width: 720px;
+`;
 
 const VideoDetail = ({video}) => {
     if(!video) {
@@ -8,7 +13,7 @@ const VideoDetail = ({video}) => {
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
     
     return(
-        <div >
+        <VideoBase >
             <div className="ui embed">
                 <iframe src={videoSrc} title="Video Player"/>
             </div>
@@ -18,7 +23,7 @@ const VideoDetail = ({video}) => {
                 </h4>
                 <p>{video.snippet.description}</p>
             </div>
-        </div>
+        </VideoBase>
     ); 
 };
 
