@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 const VideoBase = styled.div`
     width: 720px;
+    @media (max-width: 800px) {
+        
+        max-width: 320px;        
+    }
 `;
 
 const VideoDetail = ({video}) => {
