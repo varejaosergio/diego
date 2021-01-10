@@ -20,6 +20,7 @@ function SearchBar ({onSubmit}){
             }}
             id="searchBar"
             label="Video Search"
+            type="search"
             variant="outlined"
             margin="normal"
             fullWidth

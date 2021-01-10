@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutBase = styled.div`
-    .titulo-design{
+    .titulo-design{        
         font-weight: 400;
         padding-top:0px;
-        margin: 20px 0 20px 0;
-        color: #ffffff;
+        margin: 20px 0 20px 0;        
         text-align: center;
         font-size: 7em;
         font-family: 'bickham-script-pro-3', sans-serif;       
     }
+    color: black !important
     line-height: 1.5;
     margin-left: 30px;
     margin-right: 30px;

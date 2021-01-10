@@ -50,7 +50,7 @@ class App extends React.Component {
                   url={data.videos[0].url}
                   videoDescription="#Hawaianlife"
                 />
-                <About />
+                <About/>
                 
                 <Carousel
                   ignoreFirstVideo
