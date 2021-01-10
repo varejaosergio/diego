@@ -5,9 +5,9 @@ const AboutBase = styled.div`
     .titulo-design{        
         font-weight: 400;
         padding-top:0px;
-        margin: 20px 0 20px 0;        
+        margin: 10px 0 10px 0;        
         text-align: center;
-        font-size: 7em;
+        font-size: 4em;
         font-family: 'bickham-script-pro-3', sans-serif;       
     }
     color: black !important
