@@ -23,7 +23,7 @@ function About() {
             <h1 className="titulo-design" >Diego Vilela</h1>
             <div>
                 <p>
-                    Surf Videos.
+                   
                 </p>
             </div>
         </AboutBase>

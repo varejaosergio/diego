@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const VideoBase = styled.div`
     width: 720px;
     @media (max-width: 800px) {        
-        width: 340px;
+        width: 345px;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 15px;               

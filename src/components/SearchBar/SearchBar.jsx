@@ -3,6 +3,7 @@ import { TextField } from "@material-ui/core";
 
 function SearchBar ({onSubmit}){
     const [term, setTerm] = useState("");
+    
 
     return (
       <div className="SearchBar ui segment">
